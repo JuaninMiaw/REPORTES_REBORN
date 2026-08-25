@@ -1,6 +1,6 @@
 /* ==========================================
-   VARIABLES Y ESTILOS BASE (MODO OSCURO / PREDETERMINADO)
-   ========================================== */
+VARIABLES Y ESTILOS BASE (MODO OSCURO / PREDETERMINADO)
+========================================== */
 :root {
     --bg-dark: #0a0a0f;
     --sip-blue: #0f172a;
@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Contenedor universal supongo */
@@ -20,7 +20,7 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Body y pos eso xdxd:V */
@@ -75,7 +75,8 @@ body {
     opacity: 0.12;
     pointer-events: none;
 }
-/*No quiero hablar d esto....*/
+
+
 .textoquemueve {
     display: flex;
     flex-direction: column;
@@ -122,7 +123,7 @@ body {
     color: var(--gold);
     letter-spacing: 2px;
 }
-/*contenedor d la barra de abajo*/
+/*contenedor de la barra de abajo*/
 .contenedorbarra {
     width: 250px;
     height: 6px;
@@ -150,9 +151,11 @@ body {
     color: #888;
 }
 
-/* ==========================================
-   CABECERA Y NAVEGACIÓN
-   ========================================== */
+/*
+==========================================
+CABECERA Y NAVEGACIÓN
+========================================== 
+*/
 .cabeceraprincipal {
     background-color: var(--sip-blue);
     position: sticky;
@@ -173,7 +176,7 @@ body {
     height: 2px;
     background: linear-gradient(90deg, var(--gold), transparent);
 }
-/*El area del logo d la cabecera*/
+/*El area del logo de la cabecera*/
 .areadellogo h1 {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -187,7 +190,7 @@ body {
 
 .textoamarillo { color: var(--gold); }
 .textoblanco { color: var(--white); }
-/*Boton hamburguesa y ultimo commit, finalmente*/
+/*Boton hamburguesa*/
 .botonhamburguesa {
     background: none;
     border: none;
@@ -249,6 +252,7 @@ body {
     transition: transform 0.2s ease;
 }
 
+/*FUncion del cursor a la hora de pasarlo por encima */
 .botoncuentaaesthetic:hover {
     transform: scale(1.08);
 }
@@ -357,9 +361,11 @@ body {
     display: block;
 }
 
-/* ==========================================
-   MODALES Y FORMULARIOS (LOGIN & REPORTES)
-   ========================================== */
+/* 
+==========================================
+MODALES Y FORMULARIOS (LOGIN & REPORTES)
+========================================== 
+*/
 .pantallacompletalogin,
 #report-screen,
 #mis-reportes-screen,
