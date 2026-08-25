@@ -614,6 +614,7 @@ MODALES Y FORMULARIOS (LOGIN & REPORTES)
     align-items: center;
 }
 
+/*Responsive*/
 @media (max-width: 768px) {
     .seccionhero {
         grid-template-columns: 1fr;
