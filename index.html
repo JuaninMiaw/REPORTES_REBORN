@@ -969,7 +969,7 @@
           setReporteMsg("Solo puedes elegir hasta 3 imagenes.", "err");
           return;
         }
-//imagens mas 
+        //imagenes mas 
         for (let i = 0; i < archivosSeleccionados.length; i++) {
           const tiposPermitidos = ["image/jpeg", "image/png", "image/webp"];
 
@@ -978,7 +978,7 @@
             return;
           }
         }
-//enviando reporte subido 
+        //enviando reporte subido 
         const btn = document.getElementById("btnEnviarReporte");
         btn.disabled = true;
         setReporteMsg("Enviando reporte...", "");
