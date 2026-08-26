@@ -11,7 +11,9 @@
     <link rel="icon" href="Archivos/imagen/REPORTES_LOGO.png" type="image/png" />
     <script src="auth.js" defer></script>
   </head>
+  
   <body>
+    <!--Animacion de carga de introduccion-->
     <div id="guard-loading-screen">
       <div class="titulocargando">SISTEMA // CARGANDO HISTORIAL...</div>
       <div class="contenedorbarra">
@@ -25,7 +27,7 @@
         <div class="historialtitulo">
           <a href="index.html" class="flechaparatras">← INICIO</a>
           <div class="areadellogo">
-            <!-- Cambio de historial a Lista ; ASIGNADO PARA: NICOLAS MESA y css tmb-->  
+            <!-- Cambio de historial a Lista ; ASIGNADO PARA: NICOLAS MESA y css tmb LISTOO-->  
             <h1>LISTA DE <span class="textoamarillo">REPORTES</span></h1>
             <p class="subtituloxd">Cyber<span class="textoblanco">Tilines</span></p>
           </div>
@@ -45,10 +47,12 @@
       <section class="presentacionhistorial">
         <p class="numeroseccion">// 01</p>
         <h2>REPORTES DE LA COMUNIDAD SIP</h2>
+
         <p>
           Los reportes estan separados por su tipo de problema. Puedes abrir una
           categoria y presionar una tarjeta para ver toda su informacion.
         </p>
+
       </section>
       <!--cargando reportes hay-->
       <div id="listaCategorias" class="listacategorias">
@@ -108,6 +112,7 @@
       const guardLoadingScreen = document.getElementById("guard-loading-screen");
       const listaCategorias = document.getElementById("listaCategorias");
       const detalleScreen = document.getElementById("detalleReporteScreen");
+
       //Categorias
       const nombresCategorias = {
         material: "Material institucional",
@@ -173,11 +178,7 @@
               where("tipoAutor", "==", tipoCuenta)
             );
           }
-<<<<<<< HEAD
-          //hay son las consultas
-=======
           //ahi son las consultas
->>>>>>> da12f321f681c2827342168e48b2fa2c566e8e21
           const resultado = await getDocs(consulta);
           let reportes = [];
 
